@@ -23,7 +23,7 @@ jobs:
       uses: NuGet/setup-nuget@v1.1.1
 
     - name: Restore dependencies
-      run: nuget restore $SOLUTION
+      run: dotnet restore $SOLUTION
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v3.0.3
